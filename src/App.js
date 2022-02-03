@@ -13,6 +13,20 @@ function App() {
 	return (
 		<React.Fragment>
 			<Container maxWidth="lg">
+				<Box
+					sx={{
+						position: 'fixed',
+						right: 0,
+						bottom: 0,
+						color: '#374151',
+						display: 'flex',
+						alignItems: 'center',
+						mx: 2
+					}}
+				>
+					<pre>developed by: </pre>
+					<a href="https://github.com/Durgarao310"> Durgarao310</a>
+				</Box>
 				<Grid container spacing={4}>
 					<Grid item xs={12} sm={12} md={6} lg={6}>
 						<Box
