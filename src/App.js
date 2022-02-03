@@ -25,7 +25,10 @@ function App() {
 					}}
 				>
 					<pre>developed by: </pre>
-					<a href="https://github.com/Durgarao310"> Durgarao310</a>
+					<a href="https://www.linkedin.com/in/durgaraoganta/">
+						{' '}
+						Durgarao
+					</a>
 				</Box>
 				<Grid container spacing={4}>
 					<Grid item xs={12} sm={12} md={6} lg={6}>
