@@ -23,12 +23,13 @@ const Flex = (props) => {
 							backgroundColor: '#047857',
 							textAlign: 'center',
 							minHeight: '100%',
-							overflow: 'hidden'
+							overflow: 'hidden',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center'
 						}}
 					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>
-							box1
-						</Typography>
+						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box1</Typography>
 					</Box>
 				</Paper>
 
@@ -39,12 +40,13 @@ const Flex = (props) => {
 							backgroundColor: '#ef4444',
 							textAlign: 'center',
 							minHeight: '100%',
-							overflow: 'hidden'
+							overflow: 'hidden',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center'
 						}}
 					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>
-							box2
-						</Typography>
+						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box2</Typography>
 					</Box>
 				</Paper>
 
@@ -55,12 +57,13 @@ const Flex = (props) => {
 							backgroundColor: '#581c87',
 							textAlign: 'center',
 							minHeight: '100%',
-							overflow: 'hidden'
+							overflow: 'hidden',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center'
 						}}
 					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>
-							box3
-						</Typography>
+						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box3</Typography>
 					</Box>
 				</Paper>
 			</Box>
