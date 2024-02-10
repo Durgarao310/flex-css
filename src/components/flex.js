@@ -1,74 +1,49 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
-import Paper from '@mui/material/Paper'
+import React from "react";
+import { Box, Typography, Paper } from "@mui/material";
 
-const Flex = (props) => {
-	return (
-		<React.Fragment>
-			<Box
-				sx={{
-					width: '100%',
-					minHeight: '50vh',
-					display: 'flex',
-					alignItems: props.align,
-					justifyContent: props.justify,
-					flexDirection: props.direction,
-					overflow: 'hidden'
-				}}
-			>
-				<Paper elevation={3} sx={{ m: 1, overflow: 'hidden' }}>
-					<Box
-						sx={{
-							p: 1.5,
-							backgroundColor: '#047857',
-							textAlign: 'center',
-							minHeight: '100%',
-							overflow: 'hidden',
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center'
-						}}
-					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box1</Typography>
-					</Box>
-				</Paper>
+const Flex = ({ direction, justify, align }) => {
+  const paperStyles = {
+    m: 1,
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    minHeight: "100%",
+  };
 
-				<Paper elevation={3} sx={{ m: 1, overflow: 'hidden' }}>
-					<Box
-						sx={{
-							padding: 2.5,
-							backgroundColor: '#ef4444',
-							textAlign: 'center',
-							minHeight: '100%',
-							overflow: 'hidden',
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center'
-						}}
-					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box2</Typography>
-					</Box>
-				</Paper>
+  return (
+    <Paper
+      elevation={3}
+      sx={{
+        width: "100%",
+        minHeight: "50vh",
+        display: "flex",
+        alignItems: align,
+        justifyContent: justify,
+        flexDirection: direction,
+        overflow: "hidden",
+        background: "cyan",
+      }}>
+      <Box sx={{ ...paperStyles, backgroundColor: "#047857", padding: 1.5 }}>
+        <Typography sx={{ color: "#FFF", alignSelf: "center" }}>
+          box1
+        </Typography>
+      </Box>
 
-				<Paper elevation={3} sx={{ m: 1, overflow: 'hidden' }}>
-					<Box
-						sx={{
-							padding: 3.5,
-							backgroundColor: '#581c87',
-							textAlign: 'center',
-							minHeight: '100%',
-							overflow: 'hidden',
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center'
-						}}
-					>
-						<Typography sx={{ color: '#FFF', alignSelf: 'center' }}>box3</Typography>
-					</Box>
-				</Paper>
-			</Box>
-		</React.Fragment>
-	)
-}
+      <Box sx={{ ...paperStyles, backgroundColor: "#ef4444", padding: 2.5 }}>
+        <Typography sx={{ color: "#FFF", alignSelf: "center" }}>
+          box2
+        </Typography>
+      </Box>
 
-export default Flex
+      <Box sx={{ ...paperStyles, backgroundColor: "#581c87", padding: 3.5 }}>
+        <Typography sx={{ color: "#FFF", alignSelf: "center" }}>
+          box3
+        </Typography>
+      </Box>
+    </Paper>
+  );
+};
+
+export default Flex;
